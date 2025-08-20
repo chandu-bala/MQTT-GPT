@@ -68,3 +68,16 @@ Run the client:
 ```bash
 node server.js
 ```
+
+
+
+
+
+
+## Follow-up Explanation
+
+When you run the project, the **MQTTX Desktop Client** will automatically open, create, and subscribe to the specified topic if the connection is successfully established.
+
+If the connection is not established, you will need to **manually create a connection** in the MQTTX Desktop Client using the same **broker** and **topic details** defined in your `.env` file.
+
+Once connected, you can **publish a message** to the subscribed topic. The Node.js client will process the message, forward it to the **OpenAI API**, and then publish the generated response back to the same topic. You will see the response instantly in the MQTTX Desktop Client.
