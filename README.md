@@ -35,3 +35,36 @@ docker run -d --name emqx \
   -p 1883:1883 -p 8083:8083 \
   -p 8883:8883 -p 8084:8084 \
   -p 18083:18083 emqx/emqx:latest
+```
+
+### 2. Install MQTTX Desktop Application
+- Download from [MQTTX website](https://mqttx.app/).
+- Install the version that matches your OS and CPU architecture.
+
+### 3. Get an OpenAI API Key
+- Log in or create an account at [OpenAI](https://platform.openai.com/).
+- **Create new secret key**.
+- Save the key in the `.env` file locally:
+
+
+## ▶️ Running the Project
+
+Clone this repository:
+
+```bash
+git clone https://github.com/<your-username>/MQTT-chatGPT.git
+cd MQTT-chatGPT
+```
+
+Install dependencies:
+
+```bash
+npm init -y
+npm install axios mqtt dotenv
+```
+
+Run the client:
+
+```bash
+node server.js
+```
