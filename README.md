@@ -48,8 +48,8 @@ docker run -d --name emqx \ -p 1883:1883 -p 8083:8083 \ -p 8883:8883 -p 8084:808
 Clone this repository:
 
 ```bash
-git clone https://github.com/chandu-bala/MQTT-chatGPT.git
-cd MQTT-chatGPT
+git clone https://github.com/chandu-bala/MQTT-GPT.git
+cd MQTT-GPT
 ```
 
 Install dependencies:
