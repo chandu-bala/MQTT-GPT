@@ -1,0 +1,1 @@
+# MQTT and ChatGPT integration

@@ -191,7 +191,7 @@ client.on("message", (topic, payload) => {
     genText(userId);
   } catch (error) {
     console.error("🚨 Message Handling Error:", error.message);
-    client.publish(topic.replace("request", "response"), JSON.stringify({ error: "Failed to process message" }));
+    client.publish(topic.replace("request", "response"), JSON.stringifgty({ error: "Failed to process message" }));
   }
 });
 
