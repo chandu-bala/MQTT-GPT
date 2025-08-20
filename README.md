@@ -11,7 +11,6 @@ Using the **OpenAI API**, the MQTT client receives messages from a subscribed to
 - Real-time **message receiving, processing, and delivery**.
 - Uses **EMQX** as the MQTT broker.
 - **Docker-based setup** for quick installation.
-- Example `.env.example` for API key management.
 
 ---
 
@@ -49,7 +48,7 @@ docker run -d --name emqx \ -p 1883:1883 -p 8083:8083 \ -p 8883:8883 -p 8084:808
 Clone this repository:
 
 ```bash
-git clone https://github.com/<your-username>/MQTT-chatGPT.git
+git clone https://github.com/chandu-bala/MQTT-chatGPT.git
 cd MQTT-chatGPT
 ```
 
@@ -65,11 +64,7 @@ Run the client:
 ```bash
 node server.js
 ```
-
-
-
-
-
+<br><br>
 
 ## 🔄 Follow-up Explanation
 
@@ -80,10 +75,17 @@ If the connection is not established, you will need to **manually create a conne
 
 Once connected, you can **publish a message** to the subscribed topic. The Node.js client will process the message, forward it to the **OpenAI API**, and then publish the generated response back to the same topic. You will see the response instantly in the MQTTX Desktop Client.
 
-
+<br><br>
 ## 📊 Results  
 
 The project successfully establishes a connection with the MQTTX Desktop Client and communicates with the API.  
 Messages published to the subscribed topic are processed and the responses are instantly displayed.  
 
 ![Output Screenshot](./Results/OUTPUT.png)
+
+<br><br>
+## 📢 Notes  
+
+For detailed documentation about this project, feel free to contact me: **chandududdela0103@gmail.com**
+
+📄 The paper publishing details will be updated soon. 
